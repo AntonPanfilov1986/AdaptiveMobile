@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "adeptive";
+  src: url("../../fonts/adeptive.eot?pee7pl");
+  src: url("../../fonts/adeptive.eot?pee7pl#iefix") format("embedded-opentype"),
+    url("../../fonts/deptive.ttf?pee7pl") format("truetype"),
+    url("../../fonts/adeptive.woff?pee7pl") format("woff"),
+    url("../../fonts/adeptive.svg?pee7pl#adeptive") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "adeptive" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mark:before {
+  content: "\e902";
+}
+.icon-monitor:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-box:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-pencil:before {
+  content: "\e905";
+  color: #fff;
+}
