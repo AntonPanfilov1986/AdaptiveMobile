@@ -64,6 +64,7 @@
   .button {
     font-size: 31px;
     line-height: 35px;
+    margin-top: 33px !important;
   }
 }
 @media (min-width: 960px) {

@@ -4,7 +4,7 @@
   padding-bottom: 15px;
 }
 .section-hero {
-  min-height: 200px;
+  min-height: 150px;
   color: rgba(255, 255, 255, 0.85);
 }
 .section-background {
@@ -16,12 +16,15 @@
   z-index: -1;
   margin: 0;
 }
-.section-secondary {
-  margin-top: 40px;
-  border-bottom: 1px solid rgba(79, 79, 79, 0.2);
-}
 .section-content-phone {
   display: none;
+}
+.section-content-description {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .section-background > img {
   height: 100%;
@@ -30,12 +33,12 @@
   font-size: 28px;
   font-weight: 300;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 .section-content-subtitle {
   line-height: 15px;
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 .section-cart {
   margin-top: 16px;
@@ -56,15 +59,7 @@
   font-size: 14px;
   line-height: 24px;
 }
-.section-overlay {
-}
 
-.section-foreground {
-}
-.section-title {
-}
-.section-description {
-}
 @media (min-width: 480px) {
   .section-cart {
     margin-top: 20px;
@@ -73,10 +68,7 @@
     max-width: 480px;
     margin: 0 auto;
   }
-  .section-secondary {
-    padding-bottom: 20px;
   }
-}
 @media (min-width: 640px) {
   .section-content {
     display: -webkit-box;
@@ -86,6 +78,9 @@
     -ms-flex-align: center;
     align-items: center;
   }
+  .section-content-description {
+    align-items: flex-start;
+    }
   .section-secondary {
     padding-bottom: 20px;
   }
@@ -103,6 +98,9 @@
     display: block;
     margin-right: 66px;
   }
+  .section-cart {
+    margin-top: 28px;
+}
   .section-content-title {
     font-size: 31px;
   }
@@ -122,12 +120,12 @@
   .section-content-phone {
     margin-right: 95px;
   }
-  .section-secondary {
-    padding-bottom: 30px;
+    .section-secondary {
+    padding-bottom: 45px;
     border-bottom: none;
   }
   .section-cart {
-    margin-top: 30px;
+    margin-top: 45px;
   }
   .section-cart-subtitle {
     margin-top: 55px;
@@ -139,6 +137,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .section-content-description {
+    line-height: 45px;
+  }
   .section-content-title {
     font-size: 42px;
   }

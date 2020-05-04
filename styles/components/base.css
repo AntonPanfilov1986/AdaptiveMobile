@@ -22,11 +22,9 @@ html {
   box-sizing: content-box;
   padding: 0 16px;
 }
-
-.logo {
-  display: inline-block;
+.container-contray {
+  padding: 0 !important;
 }
-
 a {
   text-decoration: none;
 }
@@ -81,7 +79,7 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 22px 0 0 0;
+  padding: 22px 0;
 }
 .circle {
   width: 33px;
@@ -152,12 +150,10 @@ footer {
     font-size: 65px;
   }
   .circle-large {
-    width: 130px;
-    height: 130px;
+    width: 106px;
+    height: 106px;
   }
-  .icon {
-    font-size: 75px;
-  }
+  
 }
 @media (min-width: 640px) {
   .logo {
@@ -207,6 +203,31 @@ footer {
   .cart > img {
     width: 370px;
     height: 280px;
+  }
+  .line {
+    position: relative;
+  }
+  .line-active::after {
+  content: ""; 
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  width: 65%;
+  border: 3px solid #5094f2;
+    
+  }
+  .line:hover {
+    text-decoration: none !important;   
+  }
+  .line:hover::after {
+  content: ""; 
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  width: 65%;
+  border: 3px solid #5094f2;
   }
 }
 @media (min-width: 1200px) {
